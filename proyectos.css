@@ -25,6 +25,11 @@ body{
     align-items: center;
 }
 
+.proyectos__cards a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 .proyectos__cards article{
@@ -46,4 +51,10 @@ body{
     width: 85%;
     height: auto;
     border-radius: 15px;
+    transition: transform 0.3s ease;
+
+}
+
+.proyectos__cards img:hover{
+    transform: scale(1.05);
 }

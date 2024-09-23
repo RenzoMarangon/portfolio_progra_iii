@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portafolio Renzo Marangon | Programación III 2024">
     <title>Portafolio Renzo Marangon | Programación III 2024</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="proyectos.css">
 
@@ -13,39 +16,50 @@
     
     <header>
         <nav>
-            <h1>Portfolio | Programación III</h1>
+            <h1 class="wow animate__animated animate__fadeInDown">Portfolio | Programación III</h1>
             <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./sobre-mi.html" >Sobre mí</a></li>
-                <li><a class="active" href="./proyectos.html">Proyectos</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-
+                <li><a class="wow animate__animated animate__fadeInDown" data-wow-duration=".5s" data-wow-delay=".1s"  href="./index.html">Inicio</a></li>
+                <li><a class="wow animate__animated animate__fadeInDown" data-wow-duration=".5s" data-wow-delay=".2s" href="./sobre-mi.html">Sobre mí</a></li>
+                <li><a class="active wow animate__animated animate__fadeInDown" data-wow-duration=".5s" data-wow-delay=".3s" href="./proyectos.html">Proyectos</a></li>
+                <li><a class="wow animate__animated animate__fadeInDown" data-wow-duration=".5s" data-wow-delay=".4s" href="./contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section  class="proyectos">
-            <h2>Mis Proyectos</h2>
+            <h2 class="wow animate__animated animate__fadeInDown">Mis Proyectos</h2>
             <div class="proyectos__cards">
                 <article>
-                    <h3>Guías digitales inteligentes para hosts</h3>
-                    <img src="./img/bnbuddy.jpg" alt="Guías digitales inteligentes para hosts">
+                    <h3 class="wow animate__animated animate__fadeInDown">Guías digitales inteligentes para hosts</h3>
+                    <a href="https://bnbuddy.netlify.app/" target="_blank">
+                        <img src="./img/bnbuddy.jpg" class="wow animate__animated animate__rubberBand" alt="Guías digitales inteligentes para hosts">
+                    </a>
                 </article>
                 <article>
-                    <h3>Naval Electric</h3>
-                    <img src="./img/naval-electric.jpg" alt="Naval Electric - Instalaciones eléctricas navales">
+                    <h3 class="wow animate__animated animate__fadeInDown">Naval Electric</h3>
+                    <a href="https://naval-electric.netlify.app/" target="_blank">
+                        <img src="./img/naval-electric.jpg" class="wow animate__animated animate__rubberBand" alt="Naval Electric - Instalaciones eléctricas navales">
+                    </a>
                 </article>
                 <article>
-                    <h3>CryptoJuegos</h3>
-                    <img src="./img/cryptojuegos.jpg" alt="CryptoJuegos - Juegos con criptomonedas">
+                    <h3 class="wow animate__animated animate__fadeInDown">CryptoJuegos</h3>
+                    <a href="https://cryptojuegos.netlify.app/" target="_blank">
+                        <img src="./img/cryptojuegos.jpg" class="wow animate__animated animate__pulse" alt="CryptoJuegos - Juegos con criptomonedas">
+                    </a>
                 </article>
                 <article>
-                    <h3>Guía de Flexbox</h3>
-                    <img src="./img/flexbox.jpg" alt="Guía de flexbox">
+                    <h3 class="wow animate__animated animate__fadeInDown">Guía de Flexbox</h3>
+                    <a href="https://introduccion-a-flexbox.netlify.app/" target="_blank">
+                        <img src="./img/flexbox.jpg" class="wow animate__animated animate__pulse" alt="Guía de flexbox">
+                    </a>
                 </article>
             </div>
         </section>
     </main>
+
+    <script>
+        new WOW().init();
+    </script>
 </body>
 </html>
