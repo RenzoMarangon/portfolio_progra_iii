@@ -1,0 +1,27 @@
+body{
+    background-image: url('./img/fondo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sobre_mi{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;  
+    height: 88vh;  
+}
+
+.sobre_mi img{
+    width: 30%;
+    margin-left: 5%;
+}
+
+.sobre_mi__nombre{
+    text-align: center;
+    line-height: 50px;
+    margin-right: 5%;
+}
